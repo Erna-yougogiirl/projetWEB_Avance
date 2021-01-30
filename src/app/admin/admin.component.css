@@ -1,0 +1,35 @@
+
+nav {
+    background-color:rgb(18, 90, 149);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: inline;
+    align-items: center;
+    
+}
+nav *{
+    display: inline;
+    
+
+}
+
+header li {
+    margin: 20px;
+    float: right;
+}
+
+main {
+    color: white;
+}
+body{
+    height: 125vh;
+    margin-top: 80px;
+    padding: 30px;
+}
+p{
+    color: white;
+    text-decoration-style: solid;
+}

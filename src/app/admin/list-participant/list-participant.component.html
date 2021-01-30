@@ -1,0 +1,13 @@
+<section>
+    <a routerLink="../addparticipant" routerLinkActive="active" id="plus"><img src="assets/addd.png"> </a>
+    <table>
+        <tr>
+        <th> Liste de Participants </th>
+        </tr>
+        
+        <app-participant *ngFor="let part of participants " [participant] = "part" >
+            
+        </app-participant>
+        
+    </table>
+</section>

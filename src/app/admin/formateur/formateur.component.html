@@ -1,0 +1,14 @@
+
+<section>
+<tr>
+<ul>
+<li id="text">{{formateur.nom}} {{formateur.prenom}} {{formateur.adresse}} {{formateur.email}} {{formateur.domaine}}  </li> 
+<li><a (click)='supprimerFormateur()' >
+        <img src="assets/supp.png" class="icon" />
+</a></li>
+<li><a routerLink="./list" routerLinkActive="active">
+            <img src="assets/edit.png" class="icon" />
+</a></li>
+</ul>
+</tr>
+</section>

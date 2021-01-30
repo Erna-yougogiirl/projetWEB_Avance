@@ -1,0 +1,29 @@
+<body>
+<header>
+<nav >
+  <img src="assets/admin.png" class="icon" /><p>ESPACE ADMIN</p>
+  <ul>
+    <li><app-sidenav  
+      [sidenavTemplateRef]="navContent"
+      [direction]="'left'" 
+      [navWidth]="280" 
+      [duration]="0.5">
+      </app-sidenav>
+      <app-header></app-header>
+    </li>
+    
+    <li style=" color: antiquewhite;" class="date" > date : {{date|date }} </li>
+    <li><a class="date" routerLink="../" routerLinkActive="active"><img src="assets\out.png"></a></li>
+  </ul>
+</nav>
+</header>
+<br>   
+<main>  
+<div class="main-container">
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+</div>
+<ng-template #navContent> </ng-template>
+</main>
+</body>

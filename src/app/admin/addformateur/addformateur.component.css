@@ -1,0 +1,30 @@
+input {
+    background-color: #2e6cb3;
+    color: #202285;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset, 0 -
+1px 0 rgba(0,0,0,0.05) inset;
+    margin-left: 10px;
+    
+    
+}
+label{
+    display:block;
+    color: #c6c5c3;
+    font: outline;
+    box-sizing: border-box;
+}
+form{
+    float: center;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 280px;
+    border: 2px solid;
+    background-color:rgb(18, 90, 149);
+    padding: 10px;
+    color: #bdc2c5;
+
+}
+

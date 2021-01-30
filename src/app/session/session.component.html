@@ -1,0 +1,19 @@
+<h3>{{session.nom}}</h3>
+<div [align]="alignment" [ngStyle]="{color:couleur}">{{session.track}}</div>
+<div>Prevue le {{session.date | date : "short"}} pendant {{session.duree}} jours à {{session.local}}</div>
+<li *ngIf="session.participants < 20;then ok else notok"></li>
+<ng-template #ok>encore {{20 - session.participants}} place disponible"</ng-template>
+<ng-template #notok>Session complete!</ng-template>
+<div>{{session.participants}} participants</div> 
+<div class="tools">
+ <a class="delete">
+ details
+ </a>
+ <a [appInscriptionDisabled] = "session.isCompleted" (click)="inscrire()" class="inscrire">
+ Inscription
+ </a>  
+ <a class="partager"> 
+ Partager
+ </a>
+</div>
+

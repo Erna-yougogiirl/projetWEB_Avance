@@ -1,0 +1,13 @@
+<section>
+    <tr>
+    <ul>
+    <li>{{participant.nom}} {{participant.prenom}} {{participant.adresse}} {{participant.email}} {{participant.poste}} </li>
+    <li><a (click)='supprimerpart()' >
+            <img src="assets/supp.png" class="icon" />
+    </a></li>
+    <li><a routerLink="./list" routerLinkActive="active">
+                <img src="assets/edit.png" class="icon" />
+    </a></li>
+    </ul>
+    </tr>
+    </section>

@@ -1,0 +1,13 @@
+<section>
+    <a routerLink="../addform" routerLinkActive="active" id="plus"><img src="assets/addd.png"> </a>
+    <table>
+        <tr>
+        <th> Liste de formateurs </th>
+        </tr>
+        
+        <app-formateur *ngFor="let form of formateurs " [formateur] = "form" >
+            
+        </app-formateur>
+        
+    </table>
+</section>

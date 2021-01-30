@@ -1,0 +1,32 @@
+<div class="side-nav-bar"
+[ngClass]="{ 'side-nav-bar-collapsed': !(showSideNav | async) }">
+
+<!-- overlay -->
+<div class="side-nav-bar-overlay" 
+[ngStyle]="{ 'transition': 'background-color ' + duration + 's, visibility ' + duration + 's' }"
+[ngClass]="{ 'side-nav-bar-overlay-collapsed': !(showSideNav | async) }"
+    (click)="onSidebarClose()"></div>
+
+<!-- side bar-->
+<div class="side-nav-bar-menu-container" 
+[ngStyle]="getSideNavBarStyle((showSideNav | async))">
+    
+    <!-- close button -->
+    <div><span class="material-icons side-nav-bar-close" (click)="onSidebarClose()">clear</span></div>
+    <a routerLink="./" routerLinkActive="active">
+        <img src="assets/dashboard.png" class="icon" /> <span>dashboard</span>
+    </a>
+    <a routerLink="./list" routerLinkActive="active">
+        <img src="assets/devices.png" class="icon" />  sessions
+    </a>
+    <a routerLink="./formateur" routerLinkActive="active">
+            <img src="assets/user.png" class="icon" />  formateurs
+    </a>
+    <a routerLink="./participant" routerLinkActive="active"><img src="assets/affiliate.png" class="icon"/>participants </a>
+    
+    <div class="side-nav-bar-content-container">
+        <ng-container *ngTemplateOutlet="sidenavTemplateRef">
+        </ng-container>
+    </div>
+</div>
+</div>

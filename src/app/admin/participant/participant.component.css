@@ -1,0 +1,7 @@
+tr * {
+    display: inline;
+    align-items: center;
+}
+img{
+    float: right;
+}
